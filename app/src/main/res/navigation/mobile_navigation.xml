@@ -12,14 +12,45 @@
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/nav_gallery"
+        android:id="@+id/nav_profile"
         android:name="moin.miley.cse489.stock_prediction_project.ui.gallery.GalleryFragment"
-        android:label="@string/menu_gallery"
+        android:label="@string/menu_profile"
         tools:layout="@layout/fragment_gallery" />
 
     <fragment
-        android:id="@+id/nav_slideshow"
+        android:id="@+id/nav_shares"
         android:name="moin.miley.cse489.stock_prediction_project.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
+        android:label="@string/menu_shares"
         tools:layout="@layout/fragment_slideshow" />
+
+    <fragment
+        android:id="@+id/nav_slist"
+        android:name="moin.miley.cse489.stock_prediction_project.ui.StockList.StockListFragment"
+        android:label="@string/menu_slist"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_pred"
+        android:name="moin.miley.cse489.stock_prediction_project.ui.gallery.GalleryFragment"
+        android:label="@string/menu_pred"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_cc"
+        android:name="moin.miley.cse489.stock_prediction_project.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_cc"
+        tools:layout="@layout/fragment_slideshow" />
+
+    <fragment
+        android:id="@+id/nav_news"
+        android:name="moin.miley.cse489.stock_prediction_project.ui.home.HomeFragment"
+        android:label="@string/menu_news"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_about"
+        android:name="moin.miley.cse489.stock_prediction_project.ui.gallery.GalleryFragment"
+        android:label="@string/menu_about"
+        tools:layout="@layout/fragment_gallery" />
+
 </navigation>

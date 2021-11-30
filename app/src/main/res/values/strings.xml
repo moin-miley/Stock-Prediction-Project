@@ -8,6 +8,11 @@
     <string name="action_settings">Settings</string>
 
     <string name="menu_home">Home</string>
-    <string name="menu_gallery">Gallery</string>
-    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_profile">Profile</string>
+    <string name="menu_shares">My Shares</string>
+    <string name="menu_slist">Stocks</string>
+    <string name="menu_pred">Predict Price</string>
+    <string name="menu_cc">Currency Convert</string>
+    <string name="menu_news">News</string>
+    <string name="menu_about">About Us</string>
 </resources>
