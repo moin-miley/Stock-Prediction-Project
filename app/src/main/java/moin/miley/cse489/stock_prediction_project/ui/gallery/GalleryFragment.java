@@ -1,4 +1,5 @@
 package moin.miley.cse489.stock_prediction_project.ui.gallery;
+//Gallery = Profile page
 
 import android.os.Bundle;
 import android.view.LayoutInflater;

@@ -13,7 +13,7 @@ public class StockListViewModel extends ViewModel{
         mText.setValue("This is slideshow fragment");
     }
 
-    public LiveData<String> getText() {
+    public static LiveData<String> getText() {
         return mText;
     }
 }

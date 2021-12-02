@@ -1,4 +1,5 @@
 package moin.miley.cse489.stock_prediction_project.ui.StockList;
+//Stock List = Profile page
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -13,23 +14,25 @@ import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
 import moin.miley.cse489.stock_prediction_project.R;
+import moin.miley.cse489.stock_prediction_project.databinding.FragmentGalleryBinding;
 import moin.miley.cse489.stock_prediction_project.databinding.FragmentSlideshowBinding;
-import moin.miley.cse489.stock_prediction_project.ui.slideshow.SlideshowViewModel;
+import moin.miley.cse489.stock_prediction_project.ui.gallery.GalleryViewModel;
 
-public class StockListFragment extends Fragment{
-    private SlideshowViewModel slideshowViewModel;
+public class StockListFragment extends Fragment {
+
+    private StockListViewModel SLViewModel;
     private FragmentSlideshowBinding binding;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        slideshowViewModel =
-                new ViewModelProvider(this).get(SlideshowViewModel.class);
+        SLViewModel =
+                new ViewModelProvider(this).get(StockListViewModel.class);
 
         binding = FragmentSlideshowBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
         final TextView textView = binding.textSlideshow;
-        slideshowViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
+        StockListViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
                 textView.setText(s);
