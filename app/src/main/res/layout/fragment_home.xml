@@ -6,7 +6,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.home.HomeFragment"
-    android:padding="10dp"
     android:orientation="vertical">
 
     <TextView
@@ -18,27 +17,33 @@
         android:textSize="30dp"
         android:textColor="@color/black"
         android:padding="5dp"
-        android:background="@color/teal_200"></TextView>
+        android:background="@color/teal_200"/>
 
     <TableLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <TableRow
-            android:background="#CCC">
+            android:backgroundTint="#CCC">
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Date"
+                android:background="@drawable/cell_shape"
+                android:backgroundTint="#CCC"
                 android:padding="5dp" />
             <TextView
-                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_width="match_parent"
                 android:text="Trading Code"
+                android:background="@drawable/cell_shape"
+                android:backgroundTint="#CCC"
                 android:padding="5dp" />
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Closing Price"
+                android:background="@drawable/cell_shape"
+                android:backgroundTint="#CCC"
                 android:padding="5dp" />
         </TableRow>
         <TableRow>
@@ -46,16 +51,19 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="12/30/2020"
+                android:background="@drawable/cell_shape"
                 android:padding="5dp" />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="1JANATAMF"
+                android:background="@drawable/cell_shape"
                 android:padding="5dp" />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="6"
+                android:background="@drawable/cell_shape"
                 android:padding="5dp" />
         </TableRow>
         <TableRow>
@@ -63,16 +71,19 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="12/30/2020"
+                android:background="@drawable/cell_shape"
                 android:padding="5dp" />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="1STPRIMFMF"
+                android:background="@drawable/cell_shape"
                 android:padding="5dp" />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="19.5"
+                android:background="@drawable/cell_shape"
                 android:padding="5dp" />
         </TableRow>
         <TableRow>
@@ -80,16 +91,19 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="12/30/2020"
+                android:background="@drawable/cell_shape"
                 android:padding="5dp" />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="AAMRANET"
+                android:background="@drawable/cell_shape"
                 android:padding="5dp" />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="45.2"
+                android:background="@drawable/cell_shape"
                 android:padding="5dp" />
         </TableRow>
     </TableLayout>
@@ -113,26 +127,31 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Dollars"
+            android:background="@drawable/shape"
             android:padding="5dp"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Euros"
+            android:background="@drawable/shape"
             android:padding="5dp"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Pounds"
+            android:background="@drawable/shape"
             android:padding="5dp"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="BDT"
+            android:background="@drawable/shape"
             android:padding="5dp"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Rupee"
+            android:background="@drawable/shape"
             android:padding="5dp"/>
     </LinearLayout>
 
@@ -150,36 +169,102 @@
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
         android:orientation="vertical">
-        <TextView
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="News Article"
-            android:padding="5dp"
-            android:background="@color/purple_200"/>
-        <TextView
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="News Article"
+                android:padding="5dp"
+                android:layout_weight="1"
+                android:background="@color/purple_200"/>
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:contextClickable="true"
+                android:background="@color/purple_200"
+                android:src="@drawable/plus_purple"/>
+        </LinearLayout>
+
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="News Article"
-            android:padding="5dp"
-            android:background="@color/purple_200"/>
-        <TextView
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="News Article"
+                android:padding="5dp"
+                android:layout_weight="1"
+                android:background="@color/purple_200"/>
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:contextClickable="true"
+                android:background="@color/purple_200"
+                android:src="@drawable/plus_purple"/>
+        </LinearLayout>
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="News Article"
-            android:padding="5dp"
-            android:background="@color/purple_200"/>
-        <TextView
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="News Article"
+                android:padding="5dp"
+                android:layout_weight="1"
+                android:background="@color/purple_200"/>
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:contextClickable="true"
+                android:background="@color/purple_200"
+                android:src="@drawable/plus_purple"/>
+        </LinearLayout>
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="News Article"
-            android:padding="5dp"
-            android:background="@color/purple_200"/>
-        <TextView
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="News Article"
+                android:padding="5dp"
+                android:layout_weight="1"
+                android:background="@color/purple_200"/>
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:contextClickable="true"
+                android:background="@color/purple_200"
+                android:src="@drawable/plus_purple"/>
+        </LinearLayout>
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="News Article"
-            android:padding="5dp"
-            android:background="@color/purple_200"/>
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="News Article"
+                android:padding="5dp"
+                android:layout_weight="1"
+                android:background="@color/purple_200"/>
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:contextClickable="true"
+                android:background="@color/purple_200"
+                android:src="@drawable/plus_purple"/>
+        </LinearLayout>
     </LinearLayout>
 
 </LinearLayout>
