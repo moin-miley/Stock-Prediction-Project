@@ -12,12 +12,13 @@
         android:layout_height="wrap_content"
         android:background="@color/teal_200"
         android:padding="20dp">
+
         <ImageView
             android:id="@+id/profile_image"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_alignParentRight="true"
-            android:src="@drawable/profile_image"/>
+            android:src="@drawable/profile_image" />
         <TextView
             android:id="@+id/fullname_field"
             android:layout_width="wrap_content"
@@ -39,12 +40,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="20dp">
+
         <ImageView
             android:id="@+id/edit_icon"
             android:layout_width="20dp"
             android:layout_height="20dp"
             android:layout_alignParentRight="true"
-            android:src="@drawable/edit"/>
+            android:contextClickable="true"
+            android:src="@drawable/edit" />
         <TextView
             android:id="@+id/acc_info"
             android:layout_width="wrap_content"
@@ -103,25 +106,27 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="20dp">
+
         <ImageView
             android:id="@+id/edit_icon2"
             android:layout_width="20dp"
             android:layout_height="20dp"
             android:layout_alignParentRight="true"
-            android:src="@drawable/edit"/>
+            android:contextClickable="true"
+            android:src="@drawable/plus_purple" />
+
         <TextView
             android:id="@+id/bookmarks"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Account Info"
+            android:text="Bookmarks"
             android:textColor="@color/black"
-            android:textStyle="bold"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:textStyle="bold" />
         <TableLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/bookmarks"
-            android:collapseColumns="2">
+            android:layout_below="@+id/bookmarks">
             <TableRow
                 android:background="#CCC">
                 <TextView
@@ -152,12 +157,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="20dp">
+
         <ImageView
             android:id="@+id/edit_icon3"
             android:layout_width="20dp"
             android:layout_height="20dp"
             android:layout_alignParentRight="true"
-            android:src="@drawable/edit"/>
+            android:contextClickable="true"
+            android:src="@drawable/plus_purple" />
         <TextView
             android:id="@+id/news_highlights"
             android:layout_width="wrap_content"
