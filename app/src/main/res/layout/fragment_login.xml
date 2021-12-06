@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center"
+
+    android:gravity="center"
+    android:background="@color/teal_700"
+    android:focusableInTouchMode="true">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/app_icon"
+                    app:shapeAppearanceOverlay="@style/Circuler">
+
+
+                </com.google.android.material.imageview.ShapeableImageView>
+
+
+
+            </RelativeLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#FFFFFF"
+                    android:hint="User Name :"
+                    android:inputType="textPersonName"
+                    android:maxLines="1"
+                    android:textSize="12sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#FFFFFF"
+                    android:hint="User Name :"
+                    android:inputType="textPersonName"
+                    android:maxLines="1"
+                    android:textSize="12sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <Button
+
+
+                android:backgroundTint="#FFFFFF"
+                android:textColor="@color/black"
+                app:spinning_bar_width="4dp"
+                app:spinning_bar_color="#FFFFFF"
+                android:text="Login"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                app:initialCornerAngle="27dp"
+                app:spinning_bar_padding="6dp"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content">
+            </Button>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="Not a member? Register Now"
+                android:textAlignment="center"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:textColor="@color/cardview_light_background"
+                />
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+</RelativeLayout>
