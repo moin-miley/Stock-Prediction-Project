@@ -6,14 +6,14 @@ import androidx.lifecycle.ViewModel;
 
 public class StockListViewModel extends ViewModel{
 
-    private MutableLiveData<String> mText;
+    private static MutableLiveData<String> mText;
 
     public StockListViewModel() {
         mText = new MutableLiveData<>();
         mText.setValue("This is slideshow fragment");
     }
 
-    public LiveData<String> getText() {
+    public static LiveData<String> getText() {
         return mText;
     }
 }

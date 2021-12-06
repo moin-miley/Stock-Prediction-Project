@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "675385606030",
+    "project_id": "dhaka-stock-exchange-csv",
+    "storage_bucket": "dhaka-stock-exchange-csv.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:675385606030:android:d457248c90b3cdc6186edf",
+        "android_client_info": {
+          "package_name": "moin.miley.cse489.stock_prediction_project"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "675385606030-79tdugjjjeskqie46nfbf4ps0s8ct7ki.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD8L_iuCPBzZABVyIX-aZfV67CVeIlau10"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "675385606030-79tdugjjjeskqie46nfbf4ps0s8ct7ki.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,22 +1,207 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.gallery.GalleryFragment">
+    tools:context=".ui.gallery.GalleryFragment"
+    android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/text_gallery"
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:background="@color/teal_200"
+        android:padding="20dp">
+
+        <ImageView
+            android:id="@+id/profile_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/profile_image" />
+        <TextView
+            android:id="@+id/fullname_field"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            android:text="Nafisha Binte Moin"
+            android:textColor="@color/black"
+            android:paddingTop="20dp"
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/email_field"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fullname_field"
+            android:text="nafishamoin7@gmail.com"
+            android:textSize="14sp"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+
+        <ImageView
+            android:id="@+id/edit_icon"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:contextClickable="true"
+            android:src="@drawable/edit" />
+        <TextView
+            android:id="@+id/acc_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Account Info"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="20sp" />
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/acc_info"
+            android:collapseColumns="2">
+        <TableRow
+            android:background="#CCC">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:padding="5dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nafisha Binte Moin"
+                android:padding="5dp" />
+        </TableRow>
+        <TableRow
+            android:background="#CCC">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:padding="5dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="nafishamoin7@gmail.com"
+                android:padding="5dp" />
+        </TableRow>
+            <TableRow
+                android:background="#CCC">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Phone No"
+                    android:padding="5dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="123456789"
+                    android:padding="5dp" />
+            </TableRow>
+    </TableLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+
+        <ImageView
+            android:id="@+id/edit_icon2"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:contextClickable="true"
+            android:src="@drawable/plus_purple" />
+
+        <TextView
+            android:id="@+id/bookmarks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bookmarks"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bookmarks">
+            <TableRow
+                android:background="#CCC">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Stock 1"
+                    android:padding="5dp" />
+            </TableRow>
+            <TableRow
+                android:background="#CCC">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Stock 2"
+                    android:padding="5dp" />
+            </TableRow>
+            <TableRow
+                android:background="#CCC">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Stock 3"
+                    android:padding="5dp" />
+            </TableRow>
+        </TableLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+
+        <ImageView
+            android:id="@+id/edit_icon3"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:contextClickable="true"
+            android:src="@drawable/plus_purple" />
+        <TextView
+            android:id="@+id/news_highlights"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="News Highlights"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="20sp" />
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/news_highlights"
+            android:collapseColumns="2">
+            <TableRow
+                android:background="#CCC">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Article 1"
+                    android:padding="5dp" />
+            </TableRow>
+            <TableRow
+                android:background="#CCC">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Article 2"
+                    android:padding="5dp" />
+            </TableRow>
+            <TableRow
+                android:background="#CCC">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Article 3"
+                    android:padding="5dp" />
+            </TableRow>
+        </TableLayout>
+    </RelativeLayout>
+</LinearLayout>
