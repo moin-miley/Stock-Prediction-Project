@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_gravity="center"
-
-    android:gravity="center"
     android:background="@color/teal_700"
     android:focusableInTouchMode="true">
 
@@ -32,69 +30,89 @@
                     android:layout_height="wrap_content"
                     android:layout_alignParentTop="true"
                     android:layout_alignParentEnd="true"
-                    android:src="@drawable/app_icon"
-                    app:shapeAppearanceOverlay="@style/Circuler">
+                    android:src="@drawable/app_icon">
 
 
                 </com.google.android.material.imageview.ShapeableImageView>
 
 
-
             </RelativeLayout>
+
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="25dp">
 
                 <EditText
+                    android:id="@+id/etUsername"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:backgroundTint="#FFFFFF"
-                    android:hint="User Name :"
+                    android:hint="Username"
                     android:inputType="textPersonName"
                     android:maxLines="1"
                     android:textSize="12sp" />
             </com.google.android.material.textfield.TextInputLayout>
+
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp">
 
                 <EditText
+                    android:id="@+id/etPassword"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:backgroundTint="#FFFFFF"
-                    android:hint="User Name :"
-                    android:inputType="textPersonName"
+                    android:hint="Password"
+                    android:inputType="textPassword|numberPassword"
                     android:maxLines="1"
                     android:textSize="12sp" />
             </com.google.android.material.textfield.TextInputLayout>
+
+            <CheckBox
+                android:id="@+id/RememberUser"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Remember User ID"
+                android:textColor="@color/white" />
+
+            <CheckBox
+                android:id="@+id/RememberLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Remember Login"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/ErrorMessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#ff0000" />
+
             <Button
-
-
-                android:backgroundTint="#FFFFFF"
-                android:textColor="@color/black"
-                app:spinning_bar_width="4dp"
-                app:spinning_bar_color="#FFFFFF"
-                android:text="Login"
+                android:id="@+id/LoginBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="20dp"
-                app:initialCornerAngle="27dp"
-                app:spinning_bar_padding="6dp"
-                android:layout_height="wrap_content"
-                android:layout_width="wrap_content">
-            </Button>
+                android:backgroundTint="#FFFFFF"
+
+                android:text="Login"
+                android:textColor="@color/black"></Button>
+
             <TextView
+                android:id="@+id/registerText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="25dp"
+                android:clickable="true"
+                android:focusable="true"
                 android:text="Not a member? Register Now"
                 android:textAlignment="center"
-                android:textSize="17sp"
-                android:textStyle="bold"
                 android:textColor="@color/cardview_light_background"
-                />
-
+                android:textSize="17sp"
+                android:textStyle="bold" />
 
 
         </LinearLayout>
