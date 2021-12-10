@@ -2,11 +2,9 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_gravity="center"
     android:background="@color/teal_700"
-    android:gravity="center"
-    android:focusableInTouchMode="true">
+    android:gravity="center">
 
 
     <ScrollView
@@ -26,7 +24,6 @@
                 android:layout_height="wrap_content">
 
                 <TextView
-
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_alignParentLeft="true"
@@ -41,8 +38,7 @@
                     android:layout_height="wrap_content"
                     android:layout_alignParentTop="true"
                     android:layout_alignParentEnd="true"
-                    android:src="@drawable/register"
-                    app:shapeAppearanceOverlay="@style/specificCornerRounded" />
+                    android:src="@drawable/register" />
 
 
             </RelativeLayout>
@@ -50,9 +46,7 @@
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                app:cardBackgroundColor="#FFFFFF"
-                app:cardCornerRadius="10dp">
+                android:layout_marginTop="10dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -66,6 +60,7 @@
                         android:layout_marginTop="2dp">
 
                         <EditText
+                            android:id="@+id/etUsernameSignUp"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:backgroundTint="#FFFFFF"
@@ -81,6 +76,7 @@
                         android:layout_marginTop="2dp">
 
                         <EditText
+                            android:id="@+id/emailId"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:backgroundTint="#FFFFFF"
@@ -96,6 +92,7 @@
                         android:layout_marginTop="2dp">
 
                         <EditText
+                            android:id="@+id/firstName"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:backgroundTint="#FFFFFF"
@@ -111,6 +108,7 @@
                         android:layout_marginTop="2dp">
 
                         <EditText
+                            android:id="@+id/lastName"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:backgroundTint="#FFFFFF"
@@ -126,6 +124,7 @@
                         android:layout_marginTop="2dp">
 
                         <EditText
+                            android:id="@+id/PhoneNo"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:backgroundTint="#FFFFFF"
@@ -141,6 +140,7 @@
                         android:layout_marginTop="2dp">
 
                         <EditText
+                            android:id="@+id/pass1"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:backgroundTint="#FFFFFF"
@@ -156,6 +156,7 @@
                         android:layout_marginTop="2dp">
 
                         <EditText
+                            android:id="@+id/pass2"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:backgroundTint="#FFFFFF"
@@ -164,20 +165,16 @@
                             android:maxLines="1"
                             android:textSize="12sp" />
                     </com.google.android.material.textfield.TextInputLayout>
-                    <Button
 
-                        android:backgroundTint="@color/teal_200"
-                        android:textColor="@color/black"
-                        app:spinning_bar_width="4dp"
-                        app:spinning_bar_color="@color/teal_200"
-                        android:text="Register"
+                    <Button
+                        android:id="@+id/registerBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal"
                         android:layout_marginTop="20dp"
-                        app:initialCornerAngle="27dp"
-                        app:spinning_bar_padding="6dp"
-                        android:layout_height="wrap_content"
-                        android:layout_width="wrap_content">
-                    </Button>
+                        android:backgroundTint="@color/teal_200"
+                        android:text="Register"
+                        android:textColor="@color/black"></Button>
 
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
