@@ -1,4 +1,4 @@
-package moin.miley.cse489.stock_prediction_project.ui.news;
+package moin.miley.cse489.stock_prediction_project.ui.News;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
