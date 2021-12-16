@@ -12,8 +12,11 @@ import android.widget.Toast;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.google.android.material.snackbar.Snackbar;
+
 import moin.miley.cse489.stock_prediction_project.MainActivity;
 import moin.miley.cse489.stock_prediction_project.R;
+import moin.miley.cse489.stock_prediction_project.databinding.ActivityMainBinding;
 
 public class SignUpActivity extends AppCompatActivity {
     private EditText username, emailID, FirstName, LastName, PhoneNo, Password1, Password2;
@@ -23,10 +26,13 @@ public class SignUpActivity extends AppCompatActivity {
     private SharedPreferences.Editor prefEditor;
     private String existingUserId = "";
     private boolean wasOpened = false;
+    private ActivityMainBinding binding;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+
         setContentView(R.layout.fragment_signup);
         sharedPreferences = getSharedPreferences("LoginSharedPrefs", MODE_PRIVATE);
         prefEditor = sharedPreferences.edit();

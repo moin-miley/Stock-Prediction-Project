@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.view.View;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -11,8 +12,11 @@ import android.widget.TextView;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.google.android.material.snackbar.Snackbar;
+
 import moin.miley.cse489.stock_prediction_project.MainActivity;
 import moin.miley.cse489.stock_prediction_project.R;
+import moin.miley.cse489.stock_prediction_project.databinding.ActivityMainBinding;
 
 public class LoginActivity extends AppCompatActivity {
     private EditText etUsername, etPassword;
@@ -23,10 +27,13 @@ public class LoginActivity extends AppCompatActivity {
     private String existingUserId = "";
     private boolean wasOpened = false;
     public static final String DEFAULT = "N/A";
+    private ActivityMainBinding binding;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+
         setContentView(R.layout.fragment_login);
         sharedPreferences = getSharedPreferences("LoginSharedPrefs", MODE_PRIVATE);
         isUserExist = sharedPreferences.contains("RM_LOGIN");
