@@ -5,8 +5,10 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.webkit.WebView;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import moin.miley.cse489.stock_prediction_project.R;
@@ -20,4 +22,10 @@ public class StockListFragment extends Fragment {
 
     }
 
+    @Override
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+        WebView myWebView = (WebView) getView().findViewById(R.id.webview);
+        myWebView.loadUrl("https://www.dsebd.org/");
+    }
 }
