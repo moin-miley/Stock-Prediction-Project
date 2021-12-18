@@ -1,5 +1,6 @@
 package moin.miley.cse489.stock_prediction_project;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
@@ -39,8 +40,13 @@ public class MainActivity extends AppCompatActivity {
         binding.appBarMain.fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+                Intent emailIntent = new Intent(android.content.Intent.ACTION_SEND);
+                String[] recipients = new String[]{"stockpredictionapp.cse489@gmail.com", "",};
+                emailIntent.putExtra(android.content.Intent.EXTRA_EMAIL, recipients);
+                emailIntent.putExtra(android.content.Intent.EXTRA_SUBJECT, "Test");
+                emailIntent.putExtra(android.content.Intent.EXTRA_TEXT, "This is email's message");
+                emailIntent.setType("text/plain");
+                startActivity(Intent.createChooser(emailIntent, "Send mail..."));
             }
         });
         DrawerLayout drawer = binding.drawerLayout;
