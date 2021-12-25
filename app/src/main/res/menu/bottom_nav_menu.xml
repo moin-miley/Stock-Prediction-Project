@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.News.NewsFragment">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/artho"
+            android:title="Artho Shuchok" />
+        <item
+            android:id="@+id/sunbd"
+            android:title="SunBD24" />
+        <item
+            android:id="@+id/sharebazar"
+            android:title="ShareBazaarNews" />
+        <item
+            android:id="@+id/sharenews"
+            android:title="ShareNews24" />
+        <item
+            android:id="@+id/businesshour"
+            android:title="BusinessHour24" />
+    </group>
+</menu>

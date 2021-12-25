@@ -1,6 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/relativeLayoutNews"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <ImageView
+            android:id="@+id/new1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="0dp"
+            android:clickable="true"
+            android:src="@drawable/new_logo1" />
+
+        <ImageView
+            android:layout_below="@+id/new1"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:id="@+id/new2"
+            android:src="@drawable/new_logo2"
+            android:clickable="true" />
+        <ImageView
+            android:layout_below="@+id/new2"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:id="@+id/new3"
+            android:src="@drawable/news_logo3"
+            android:clickable="true"/>
+        <ImageView
+            android:layout_below="@+id/new3"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:id="@+id/new4"
+            android:src="@drawable/news_logo4"
+            android:clickable="true"/>
+        <ImageView
+            android:layout_below="@+id/new4"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:id="@+id/new5"
+            android:src="@drawable/news_logo5"
+            android:clickable="true"/>
+    </RelativeLayout>
+
+
+
+</ScrollView>
