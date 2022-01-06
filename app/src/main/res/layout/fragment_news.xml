@@ -2,53 +2,185 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/scrollable_news_layout"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@color/teal_200">
     <RelativeLayout
         android:id="@+id/relativeLayoutNews"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-
-        <ImageView
-            android:id="@+id/new1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
-            android:layout_marginTop="0dp"
-            android:layout_marginEnd="0dp"
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardview1"
             android:clickable="true"
-            android:src="@drawable/new_logo1" />
-
-        <ImageView
-            android:layout_below="@+id/new1"
             android:layout_width="match_parent"
-            android:layout_height="100dp"
-            android:id="@+id/new2"
-            android:src="@drawable/new_logo2"
-            android:clickable="true" />
-        <ImageView
-            android:layout_below="@+id/new2"
+            android:layout_height="match_parent"
+            app:cardElevation="10dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/new1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="0dp"
+                    android:clickable="true"
+                    android:src="@drawable/new_logo1" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/textView1"
+                    android:layout_below="@+id/new1"
+                    android:text="Arthosuchok is the first
+                    online business news portal of Bangladesh.
+                    This is one of the most reliable news site
+                    for politics, corporate world, and share
+                    market news."
+                    android:textSize="20dp"
+                    android:textColor="@color/black"/>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardview2"
+            android:layout_below="@+id/cardview1"
             android:layout_width="match_parent"
-            android:layout_height="100dp"
-            android:id="@+id/new3"
-            android:src="@drawable/news_logo3"
-            android:clickable="true"/>
-        <ImageView
-            android:layout_below="@+id/new3"
+            android:layout_height="match_parent"
+            app:cardElevation="10dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/new2"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="0dp"
+                    android:clickable="true"
+                    android:src="@drawable/new_logo2" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/textView2"
+                    android:layout_below="@+id/new2"
+                    android:text="SunBD24 is a news company
+                    providing 24 hours live news"
+                    android:textSize="20dp"
+                    android:textColor="@color/black"/>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardview3"
             android:layout_width="match_parent"
-            android:layout_height="100dp"
-            android:id="@+id/new4"
-            android:src="@drawable/news_logo4"
-            android:clickable="true"/>
-        <ImageView
-            android:layout_below="@+id/new4"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/cardview2"
+            app:cardElevation="10dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/new3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="0dp"
+                    android:clickable="true"
+                    android:src="@drawable/news_logo3" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/textView3"
+                    android:layout_below="@+id/new3"
+                    android:text="ShareBazaarNews.com is a news
+                     company providing 24 hours live news"
+                    android:textSize="20dp"
+                    android:textColor="@color/black"/>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardview4"
             android:layout_width="match_parent"
-            android:layout_height="100dp"
-            android:id="@+id/new5"
-            android:src="@drawable/news_logo5"
-            android:clickable="true"/>
+            android:layout_height="match_parent"
+            android:layout_below="@+id/cardview3"
+            app:cardElevation="10dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/new4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="0dp"
+                    android:clickable="true"
+                    android:src="@drawable/news_logo4" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/textView4"
+                    android:layout_below="@+id/new4"
+                    android:text="Share News 24 is a news
+                     company providing 24 hours live news"
+                    android:textSize="20dp"
+                    android:textColor="@color/black"/>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardview5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/cardview4"
+            app:cardElevation="10dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/new5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="0dp"
+                    android:clickable="true"
+                    android:src="@drawable/news_logo5" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/textView5"
+                    android:layout_below="@+id/new5"
+                    android:text="businesshour24.com provide
+                    latest information and finance news on
+                    bangladesh with special focus on share
+                    market."
+                    android:textSize="20dp"
+                    android:textColor="@color/black"/>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
     </RelativeLayout>
 
 

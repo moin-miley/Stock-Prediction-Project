@@ -1,62 +1,83 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/teal_200"
-    android:padding="20dp">
+    android:background="@color/teal_200">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp"
+        android:background="@color/teal_200">
+    <TextView
+        android:id="@+id/enterAmountText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter total amount:"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:textStyle="bold"/>
+    <EditText
+        android:id="@+id/enterAmount"
+        android:background="@color/white"
+        android:layout_below="@+id/enterAmountText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textColor="@color/black"
+        android:inputType="number"/>
     <TextView
         android:id="@+id/textView1"
+        android:layout_below="@+id/enterAmount"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="From:"
         android:textColor="@color/black"
         android:textSize="30dp"
         android:textStyle="bold"/>
-
     <Spinner
-        android:id="@+id/spinner1"
+        android:id="@+id/spinner1_cc"
+        android:background="@color/white"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/textView1"
         android:spinnerMode="dropdown"
         android:layout_marginBottom="25dp"/>
-
     <TextView
         android:id="@+id/textView2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="To:"
         android:textColor="@color/black"
-        android:layout_below="@+id/spinner1"
+        android:layout_below="@+id/spinner1_cc"
         android:textSize="30dp"
         android:textStyle="bold"/>
-
     <Spinner
-        android:id="@+id/spinner2"
+        android:id="@+id/spinner2_cc"
+        android:background="@color/white"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/textView2"
         android:spinnerMode="dropdown"
         android:layout_marginBottom="25dp"/>
-
     <Button
         android:id="@+id/convertButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/spinner2"
+        android:layout_below="@+id/spinner2_cc"
         android:layout_centerHorizontal="true"
         android:backgroundTint="@color/teal_700"
         android:text="Enter"
         android:textColor="@color/white"
         android:textSize="10dp"/>
-
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/output"
         android:layout_below="@+id/convertButton"
+        android:background="@color/white"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="@color/black"
         android:textStyle="bold"
         android:textSize="20dp"/>
 
-</RelativeLayout>
+    </RelativeLayout>
+</ScrollView>
