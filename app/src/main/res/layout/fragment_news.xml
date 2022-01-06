@@ -38,11 +38,7 @@
                     android:layout_height="match_parent"
                     android:id="@+id/textView1"
                     android:layout_below="@+id/new1"
-                    android:text="Arthosuchok is the first
-                    online business news portal of Bangladesh.
-                    This is one of the most reliable news site
-                    for politics, corporate world, and share
-                    market news."
+                    android:text="Arthosuchok is the first online business news portal of Bangladesh. This is one of the most reliable news site for politics, corporate world, and share market news."
                     android:textSize="20dp"
                     android:textColor="@color/black"/>
             </RelativeLayout>
@@ -74,8 +70,7 @@
                     android:layout_height="match_parent"
                     android:id="@+id/textView2"
                     android:layout_below="@+id/new2"
-                    android:text="SunBD24 is a news company
-                    providing 24 hours live news"
+                    android:text="SunBD24 is a news company providing 24 hours live news"
                     android:textSize="20dp"
                     android:textColor="@color/black"/>
             </RelativeLayout>
@@ -107,8 +102,7 @@
                     android:layout_height="match_parent"
                     android:id="@+id/textView3"
                     android:layout_below="@+id/new3"
-                    android:text="ShareBazaarNews.com is a news
-                     company providing 24 hours live news"
+                    android:text="ShareBazaarNews.com is a news company providing 24 hours live news"
                     android:textSize="20dp"
                     android:textColor="@color/black"/>
             </RelativeLayout>
@@ -140,8 +134,7 @@
                     android:layout_height="match_parent"
                     android:id="@+id/textView4"
                     android:layout_below="@+id/new4"
-                    android:text="Share News 24 is a news
-                     company providing 24 hours live news"
+                    android:text="Share News 24 is a news company providing 24 hours live news"
                     android:textSize="20dp"
                     android:textColor="@color/black"/>
             </RelativeLayout>
@@ -173,10 +166,7 @@
                     android:layout_height="match_parent"
                     android:id="@+id/textView5"
                     android:layout_below="@+id/new5"
-                    android:text="businesshour24.com provide
-                    latest information and finance news on
-                    bangladesh with special focus on share
-                    market."
+                    android:text="businesshour24.com provide latest information and finance news on bangladesh with special focus on share market."
                     android:textSize="20dp"
                     android:textColor="@color/black"/>
             </RelativeLayout>
