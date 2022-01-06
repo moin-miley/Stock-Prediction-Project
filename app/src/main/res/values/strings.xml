@@ -29,6 +29,14 @@
     <string-array name="stock">
         <item>Nestle Beverages</item>
     </string-array>
+    <string name="convertDropDown">dropDownMenu</string>
+    <string-array name="currency">
+        <item>Taka</item>
+        <item>USD</item>
+        <item>Euro</item>
+        <item>Yen</item>
+        <item>Rupee</item>
+    </string-array>
     <string name="title_activity_news">News</string>
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
