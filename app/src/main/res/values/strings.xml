@@ -28,6 +28,8 @@
     <string name="predictDropDown">dropDownMenu</string>
     <string-array name="stock">
         <item>Nestle Beverages</item>
+        <item>Ford Motor Company</item>
+        <item>Apple Inc</item>
     </string-array>
     <string name="convertDropDown">dropDownMenu</string>
     <string-array name="currency">
