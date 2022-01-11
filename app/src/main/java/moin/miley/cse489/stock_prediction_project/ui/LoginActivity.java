@@ -4,16 +4,11 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.text.TextUtils;
-import android.view.View;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.TextView;
-
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
-
-import com.google.android.material.snackbar.Snackbar;
-
 import moin.miley.cse489.stock_prediction_project.MainActivity;
 import moin.miley.cse489.stock_prediction_project.R;
 import moin.miley.cse489.stock_prediction_project.databinding.ActivityMainBinding;
@@ -33,14 +28,13 @@ public class LoginActivity extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-
         setContentView(R.layout.fragment_login);
         sharedPreferences = getSharedPreferences("LoginSharedPrefs", MODE_PRIVATE);
-        isUserExist = sharedPreferences.contains("RM_LOGIN");
+        isUserExist = sharedPreferences.contains("USERNAME");
 
         boolean isUserIdRemembered = false;
         if(isUserExist){
-            if(sharedPreferences.getBoolean("RM_LOGIN", false)){
+            if(sharedPreferences.getBoolean("RM_USER_ID", false)){
                 Intent i = new Intent(LoginActivity.this, MainActivity.class);
                 startActivity(i);
                 return;
@@ -55,14 +49,12 @@ public class LoginActivity extends AppCompatActivity {
         etUsername.setText(existingUserId);
         etPassword = findViewById(R.id.etPassword);
         rememberUserId = findViewById(R.id.RememberUser);
-        rememberLogin = findViewById(R.id.RememberLogin);
         rememberUserId.setChecked(isUserIdRemembered);
 
         findViewById(R.id.LoginBtn).setOnClickListener(r -> {
             String username = etUsername.getText().toString();
             String password = etPassword.getText().toString();
             boolean isUserRemembered = rememberUserId.isChecked();
-            boolean isLoginRemembered = rememberLogin.isChecked();
 
             StringBuilder strb = new StringBuilder();
             if(TextUtils.isEmpty(username) || username.length() < 4 || username.length() > 30){
@@ -85,7 +77,6 @@ public class LoginActivity extends AppCompatActivity {
             } else{
                 prefEditor = sharedPreferences.edit();
                 prefEditor.putBoolean("RM_USER_ID", isUserRemembered);
-                prefEditor.putBoolean("RM_LOGIN", isLoginRemembered);
                 prefEditor.apply();
 
                 Intent i = new Intent(LoginActivity.this, MainActivity.class);
@@ -99,7 +90,7 @@ public class LoginActivity extends AppCompatActivity {
             startActivity(i);
         });
     }
-    /*@Override
+    @Override
     public void onPause() {
         super.onPause();
         wasOpened=true;
@@ -111,5 +102,5 @@ public class LoginActivity extends AppCompatActivity {
         if(wasOpened){
             finish();
         }
-    }*/
+    }
 }

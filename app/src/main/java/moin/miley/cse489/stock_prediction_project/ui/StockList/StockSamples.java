@@ -1,121 +1,112 @@
 package moin.miley.cse489.stock_prediction_project.ui.StockList;
 
 public class StockSamples {
-    private String date;
-    private String trading_code;
-    private double last_traded_price;
-    private double high;
-    private double low;
-    private double opening_price;
-    private double closing_price;
-    private double yesterdays_closing_price;
-    private double trade;
-    private double value_mn;
-    private double volume;
+    private String Symbol;
+    private String Name;
+    private String Last_Sale;
+    private String Net_Change;
+    private String chance_percent;
+    private String market_cap;
+    private String ipo_year;
+    private String volume;
+    private String sector;
+    private String industry;
 
-    public String getDate() {
-        return date;
+    public String getSymbol() {
+        return Symbol;
     }
 
-    public void setDate(String date) {
-        this.date = date;
+    public void setSymbol(String symbol) {
+        Symbol = symbol;
     }
 
-    public String getTrading_code() {
-        return trading_code;
+    public String getName() {
+        return Name;
     }
 
-    public void setTrading_code(String trading_code) {
-        this.trading_code = trading_code;
+    public void setName(String name) {
+        Name = name;
     }
 
-    public double getLast_traded_price() {
-        return last_traded_price;
+    public String getLast_Sale() {
+        return Last_Sale;
     }
 
-    public void setLast_traded_price(double last_traded_price) {
-        this.last_traded_price = last_traded_price;
+    public void setLast_Sale(String last_Sale) {
+        Last_Sale = last_Sale;
     }
 
-    public double getHigh() {
-        return high;
+    public String getNet_Change() {
+        return Net_Change;
     }
 
-    public void setHigh(double high) {
-        this.high = high;
+    public void setNet_Change(String net_Change) {
+        Net_Change = net_Change;
     }
 
-    public double getLow() {
-        return low;
+    public String getChance_percent() {
+        return chance_percent;
     }
 
-    public void setLow(double low) {
-        this.low = low;
+    public void setChance_percent(String chance_percent) {
+        this.chance_percent = chance_percent;
     }
 
-    public double getOpening_price() {
-        return opening_price;
+    public String getMarket_cap() {
+        return market_cap;
     }
 
-    public void setOpening_price(double opening_price) {
-        this.opening_price = opening_price;
+    public void setMarket_cap(String market_cap) {
+        this.market_cap = market_cap;
     }
 
-    public double getClosing_price() {
-        return closing_price;
+    public String getIpo_year() {
+        return ipo_year;
     }
 
-    public void setClosing_price(double closing_price) {
-        this.closing_price = closing_price;
+    public void setIpo_year(String ipo_year) {
+        this.ipo_year = ipo_year;
     }
 
-    public double getYesterdays_closing_price() {
-        return yesterdays_closing_price;
-    }
-
-    public void setYesterdays_closing_price(double yesterdays_closing_price) {
-        this.yesterdays_closing_price = yesterdays_closing_price;
-    }
-
-    public double getTrade() {
-        return trade;
-    }
-
-    public void setTrade(double trade) {
-        this.trade = trade;
-    }
-
-    public double getValue_mn() {
-        return value_mn;
-    }
-
-    public void setValue_mn(double value_mn) {
-        this.value_mn = value_mn;
-    }
-
-    public double getVolume() {
+    public String getVolume() {
         return volume;
     }
 
-    public void setVolume(double volume) {
+    public void setVolume(String volume) {
         this.volume = volume;
+    }
+
+    public String getSector() {
+        return sector;
+    }
+
+    public void setSector(String sector) {
+        this.sector = sector;
+    }
+
+    public String getIndustry() {
+        return industry;
+    }
+
+    public void setIndustry(String industry) {
+        this.industry = industry;
     }
 
     @Override
     public String toString() {
         return "StockSamples{" +
-                "date='" + date + '\'' +
-                ", trading_code='" + trading_code + '\'' +
-                ", last_traded_price=" + last_traded_price +
-                ", high=" + high +
-                ", low=" + low +
-                ", opening_price=" + opening_price +
-                ", closing_price=" + closing_price +
-                ", yesterdays_closing_price=" + yesterdays_closing_price +
-                ", trade=" + trade +
-                ", value_mn=" + value_mn +
+                "Symbol='" + Symbol + '\'' +
+                ", Name='" + Name + '\'' +
+                ", Last_Sale='" + Last_Sale + '\'' +
+                ", Net_Change='" + Net_Change + '\'' +
+                ", chance_percent='" + chance_percent + '\'' +
+                ", market_cap=" + market_cap +
+                ", ipo_year=" + ipo_year +
                 ", volume=" + volume +
+                ", sector='" + sector + '\'' +
+                ", industry='" + industry + '\'' +
                 '}';
     }
+
 }
 

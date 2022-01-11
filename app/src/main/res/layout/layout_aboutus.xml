@@ -7,181 +7,168 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-    <androidx.cardview.widget.CardView
-        android:id="@+id/cardview1"
-        android:layout_width="200dp"
-        android:layout_height="300dp"
-        app:cardElevation="10dp"
-        app:cardBackgroundColor="@color/teal_200"
-        app:cardPreventCornerOverlap="true"
-        app:cardUseCompatPadding="true">
-        <RelativeLayout
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardview1"
+            android:layout_width="200dp"
+            android:layout_height="300dp"
+            app:cardElevation="10dp"
+            app:cardBackgroundColor="@color/teal_200"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp">
+                <ImageView
+                    android:id="@+id/img"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:src="@drawable/profile_image" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/name1"
+                    android:text="Nafisha Binte Moin"
+                    android:layout_below="@+id/img"
+                    android:textSize="18dp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/email1"
+                    android:text="2018-3-60-047@std.ewubd.edu"
+                    android:layout_below="@+id/name1"
+                    android:textSize="15dp"
+                    android:textStyle="bold"/>
+                <Button
+                    android:id="@+id/button1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/email1"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:backgroundTint="@color/black"
+                    android:gravity="center_horizontal"
+                    android:text="Contact me"
+                    android:textColor="@color/white"/>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_toRightOf="@+id/cardview1"
+            android:id="@+id/cardview2"
+            android:layout_width="200dp"
+            android:layout_height="300dp"
+            app:cardElevation="10dp"
+            app:cardBackgroundColor="@color/teal_200"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/profile_image"
+                    android:layout_margin="10dp"
+                    android:id="@+id/img2"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/name2"
+                    android:text="Shamima Sultana"
+                    android:layout_below="@+id/img2"
+                    android:textSize="18dp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/email2"
+                    android:text="2018-3-60-099@std.ewubd.edu"
+                    android:layout_below="@+id/name2"
+                    android:textSize="15dp"
+                    android:textStyle="bold"/>
+                <Button
+                    android:id="@+id/button2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/email2"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:backgroundTint="@color/black"
+                    android:gravity="center_horizontal"
+                    android:text="Contact me"
+                    android:textColor="@color/white"/>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardview3"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_margin="5dp">
-
+            android:layout_height="200dp"
+            android:layout_below="@+id/cardview1"
+            app:cardBackgroundColor="@color/teal_700"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true">
             <ImageView
-                android:id="@+id/img"
-                android:layout_width="match_parent"
-                android:layout_height="100dp"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginEnd="10dp"
-                android:layout_marginBottom="10dp"
-                android:src="@drawable/profile_image" />
-            <TextView
+                android:id="@+id/img3"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/name1"
-                android:text="Nafisha Binte Moin"
-                android:layout_below="@+id/img"
-                android:textSize="18dp"
-                android:textColor="@color/black"
-                android:textStyle="bold"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/email1"
-                android:text="2018-3-60-047@std.ewubd.edu"
-                android:layout_below="@+id/name1"
-                android:textSize="15dp"
-                android:textStyle="bold"/>
-
-            <Button
-                android:id="@+id/button1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/email1"
-                android:layout_marginStart="5dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginEnd="5dp"
-                android:layout_marginBottom="5dp"
-                android:backgroundTint="@color/black"
-                android:gravity="center_horizontal"
-                android:text="Contact me"
-                android:textColor="@color/white"/>
-        </RelativeLayout>
-
-    </androidx.cardview.widget.CardView>
-
-    <androidx.cardview.widget.CardView
-        android:layout_toRightOf="@+id/cardview1"
-        android:id="@+id/cardview2"
-        android:layout_width="200dp"
-        android:layout_height="300dp"
-        app:cardElevation="10dp"
-        app:cardBackgroundColor="@color/teal_200"
-        app:cardPreventCornerOverlap="true"
-        app:cardUseCompatPadding="true">
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_margin="5dp">
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="100dp"
-                android:layout_gravity="center_horizontal"
-                android:src="@drawable/profile_image"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
                 android:layout_margin="10dp"
-                android:id="@+id/img2"/>
+                android:src="@drawable/app_icon" />
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardview4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cardview3"
+            app:cardBackgroundColor="@color/teal_700"
+            app:cardMaxElevation="12dp"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true">
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/name2"
-                android:text="Shamima Sultana"
-                android:layout_below="@+id/img2"
-                android:textSize="18dp"
-                android:textColor="@color/black"
-                android:textStyle="bold"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/email2"
-                android:text="2018-3-60-099@std.ewubd.edu"
-                android:layout_below="@+id/name2"
+                android:layout_gravity="center|bottom"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:text="Version: 01"
                 android:textSize="15dp"
-                android:textStyle="bold"/>
-
+                android:textStyle="bold" />
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardview5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cardview4"
+            app:cardBackgroundColor="@color/white"
+            app:cardMaxElevation="12dp"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true">
             <Button
-                android:id="@+id/button2"
-                android:layout_width="match_parent"
+                android:id="@+id/button3"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/email2"
-                android:layout_marginStart="5dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginEnd="5dp"
-                android:layout_marginBottom="5dp"
+                android:layout_gravity="center|bottom"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:text="Contact"
+                android:textColor="@color/white"
                 android:backgroundTint="@color/black"
-                android:gravity="center_horizontal"
-                android:text="Contact me"
-                android:textColor="@color/white"/>
-        </RelativeLayout>
-
-    </androidx.cardview.widget.CardView>
-
-    <androidx.cardview.widget.CardView
-        android:id="@+id/cardview3"
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:layout_below="@+id/cardview1"
-        app:cardBackgroundColor="@color/teal_700"
-        app:cardPreventCornerOverlap="true"
-        app:cardUseCompatPadding="true">
-
-        <ImageView
-            android:id="@+id/img3"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_gravity="center"
-            android:layout_margin="10dp"
-            android:src="@drawable/app_icon" />
-    </androidx.cardview.widget.CardView>
-
-    <androidx.cardview.widget.CardView
-        android:id="@+id/cardview4"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/cardview3"
-        app:cardBackgroundColor="@color/teal_700"
-        app:cardMaxElevation="12dp"
-        app:cardPreventCornerOverlap="true"
-        app:cardUseCompatPadding="true">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center|bottom"
-            android:layout_marginTop="20dp"
-            android:layout_marginBottom="20dp"
-            android:text="Version: 01"
-            android:textSize="15dp"
-            android:textStyle="bold" />
-
-    </androidx.cardview.widget.CardView>
-    <androidx.cardview.widget.CardView
-        android:id="@+id/cardview5"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/cardview4"
-        app:cardBackgroundColor="@color/white"
-        app:cardMaxElevation="12dp"
-        app:cardPreventCornerOverlap="true"
-        app:cardUseCompatPadding="true">
-
-        <Button
-            android:id="@+id/button3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center|bottom"
-            android:layout_marginTop="20dp"
-            android:layout_marginBottom="20dp"
-            android:text="Contact"
-            android:textColor="@color/white"
-            android:backgroundTint="@color/black"
-            android:textSize="15dp"
-            android:textStyle="bold" />
-
-    </androidx.cardview.widget.CardView>
+                android:textSize="15dp"
+                android:textStyle="bold" />
+        </androidx.cardview.widget.CardView>
     </RelativeLayout>
 </ScrollView>
