@@ -6,43 +6,31 @@
     android:layout_gravity="center"
     android:background="@color/teal_700"
     android:focusableInTouchMode="true">
-
-
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_alignParentTop="true">
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="10dp"
             android:orientation="vertical"
             android:padding="20dp">
-
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
-
-
                 <com.google.android.material.imageview.ShapeableImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentTop="true"
                     android:layout_alignParentEnd="true"
                     android:src="@drawable/app_icon">
-
-
                 </com.google.android.material.imageview.ShapeableImageView>
-
-
             </RelativeLayout>
-
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="25dp">
-
+                android:layout_marginTop="15dp">
                 <EditText
                     android:id="@+id/etUsername"
                     android:layout_width="match_parent"
@@ -53,12 +41,10 @@
                     android:maxLines="1"
                     android:textSize="12sp" />
             </com.google.android.material.textfield.TextInputLayout>
-
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp">
-
+                android:layout_marginTop="10dp">
                 <EditText
                     android:id="@+id/etPassword"
                     android:layout_width="match_parent"
@@ -69,27 +55,17 @@
                     android:maxLines="1"
                     android:textSize="12sp" />
             </com.google.android.material.textfield.TextInputLayout>
-
             <CheckBox
                 android:id="@+id/RememberUser"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Remember User ID"
                 android:textColor="@color/white" />
-
-            <CheckBox
-                android:id="@+id/RememberLogin"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Remember Login"
-                android:textColor="@color/white" />
-
             <TextView
                 android:id="@+id/ErrorMessage"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#ff0000" />
-
             <Button
                 android:id="@+id/LoginBtn"
                 android:layout_width="wrap_content"
@@ -97,15 +73,13 @@
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="20dp"
                 android:backgroundTint="#FFFFFF"
-
                 android:text="Login"
                 android:textColor="@color/black"></Button>
-
             <TextView
                 android:id="@+id/registerText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="25dp"
+                android:layout_marginTop="10dp"
                 android:clickable="true"
                 android:focusable="true"
                 android:text="Not a member? Register Now"
@@ -113,10 +87,6 @@
                 android:textColor="@color/cardview_light_background"
                 android:textSize="17sp"
                 android:textStyle="bold" />
-
-
         </LinearLayout>
-
-
     </ScrollView>
 </RelativeLayout>

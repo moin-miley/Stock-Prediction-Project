@@ -11,42 +11,37 @@
         android:layout_height="wrap_content"
         android:background="@color/teal_200"
         android:padding="20dp">
-
         <ImageView
             android:id="@+id/profile_image"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="120dp"
+            android:layout_height="150dp"
             android:layout_alignParentRight="true"
             android:src="@drawable/profile_image" />
         <TextView
             android:id="@+id/fullname_field"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="18dp"
             android:includeFontPadding="false"
-            android:text="Nafisha Binte Moin"
-            android:textColor="@color/black"
             android:paddingTop="20dp"
-            android:textSize="20sp" />
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            android:textStyle="bold"/>
         <TextView
             android:id="@+id/email_field"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/fullname_field"
-            android:text="nafishamoin7@gmail.com"
-            android:textSize="14sp"/>
+            android:textSize="20dp"
+            android:textStyle="italic"/>
     </RelativeLayout>
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="20dp">
-
-        <ImageView
-            android:id="@+id/edit_icon"
-            android:layout_width="20dp"
-            android:layout_height="20dp"
-            android:layout_alignParentRight="true"
-            android:contextClickable="true"
-            android:src="@drawable/edit" />
         <TextView
             android:id="@+id/acc_info"
             android:layout_width="wrap_content"
@@ -54,7 +49,7 @@
             android:text="Account Info"
             android:textColor="@color/black"
             android:textStyle="bold"
-            android:textSize="20sp" />
+            android:textSize="20dp" />
         <TableLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -66,12 +61,16 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Name"
-                android:padding="5dp" />
+                android:padding="5dp"
+                android:textColor="@color/black"
+                android:textSize="20dp"/>
             <TextView
+                android:id="@+id/fullname"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Nafisha Binte Moin"
-                android:padding="5dp" />
+                android:padding="5dp"
+                android:textColor="@color/black"
+                android:textSize="20dp"/>
         </TableRow>
         <TableRow
             android:background="#CCC">
@@ -79,12 +78,16 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Email"
-                android:padding="5dp" />
+                android:padding="5dp"
+                android:textColor="@color/black"
+                android:textSize="20dp"/>
             <TextView
+                android:id="@+id/email_info"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="nafishamoin7@gmail.com"
-                android:padding="5dp" />
+                android:padding="5dp"
+                android:textSize="20dp"
+                android:textColor="@color/black"/>
         </TableRow>
             <TableRow
                 android:background="#CCC">
@@ -92,12 +95,16 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Phone No"
-                    android:padding="5dp" />
+                    android:padding="5dp"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"/>
                 <TextView
+                    android:id="@+id/phoneNumber"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="123456789"
-                    android:padding="5dp" />
+                    android:padding="5dp"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"/>
             </TableRow>
     </TableLayout>
     </RelativeLayout>
@@ -105,102 +112,39 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="20dp">
-
-        <ImageView
-            android:id="@+id/edit_icon2"
-            android:layout_width="20dp"
-            android:layout_height="20dp"
-            android:layout_alignParentRight="true"
-            android:contextClickable="true"
-            android:src="@drawable/plus_purple" />
-
         <TextView
-            android:id="@+id/bookmarks"
+            android:id="@+id/curDate"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Bookmarks"
+            android:text="Current Date: "
             android:textColor="@color/black"
             android:textSize="20sp"
             android:textStyle="bold" />
-        <TableLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/bookmarks">
-            <TableRow
-                android:background="#CCC">
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Stock 1"
-                    android:padding="5dp" />
-            </TableRow>
-            <TableRow
-                android:background="#CCC">
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Stock 2"
-                    android:padding="5dp" />
-            </TableRow>
-            <TableRow
-                android:background="#CCC">
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Stock 3"
-                    android:padding="5dp" />
-            </TableRow>
-        </TableLayout>
-    </RelativeLayout>
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="20dp">
-
-        <ImageView
-            android:id="@+id/edit_icon3"
-            android:layout_width="20dp"
-            android:layout_height="20dp"
-            android:layout_alignParentRight="true"
-            android:contextClickable="true"
-            android:src="@drawable/plus_purple" />
         <TextView
-            android:id="@+id/news_highlights"
+            android:id="@+id/textDate"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="News Highlights"
+            android:layout_toRightOf="@+id/curDate"
             android:textColor="@color/black"
-            android:textStyle="bold"
-            android:textSize="20sp" />
-        <TableLayout
-            android:layout_width="match_parent"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/curtime"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/news_highlights"
-            android:collapseColumns="2">
-            <TableRow
-                android:background="#CCC">
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Article 1"
-                    android:padding="5dp" />
-            </TableRow>
-            <TableRow
-                android:background="#CCC">
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Article 2"
-                    android:padding="5dp" />
-            </TableRow>
-            <TableRow
-                android:background="#CCC">
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Article 3"
-                    android:padding="5dp" />
-            </TableRow>
-        </TableLayout>
+            android:text="Current Time: "
+            android:layout_below="@+id/curDate"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/texttime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/curtime"
+            android:layout_below="@+id/curDate"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
     </RelativeLayout>
 </LinearLayout>

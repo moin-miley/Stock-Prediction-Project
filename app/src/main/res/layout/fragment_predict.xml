@@ -19,7 +19,6 @@
                 android:padding="5dp"
                 android:textSize="30dp"
                 android:textStyle="bold"/>
-
             <Spinner
                 android:id="@+id/spinner1"
                 android:layout_width="match_parent"
@@ -38,7 +37,6 @@
                 android:textColor="@color/black"
                 android:textSize="30dp"
                 android:textStyle="bold"/>
-
             <EditText
                 android:id="@+id/enterDate"
                 android:layout_width="match_parent"
@@ -46,6 +44,7 @@
                 android:layout_below="@+id/textView2"
                 android:layout_marginBottom="20dp"
                 android:background="@color/white"
+                android:hint="YYYY-MM-DD"
                 android:inputType="date" />
             <Button
                 android:id="@+id/predictButton"

@@ -21,6 +21,17 @@
         <entry key="..\:/Bach CSE/4th Year/10th semester/CSE489 - Mobile Programming/Project/Stock Prediction/app/src/main/res/menu/activity_main_drawer.xml" value="0.264" />
         <entry key="..\:/Bach CSE/4th Year/10th semester/CSE489 - Mobile Programming/Project/Stock Prediction/app/src/main/res/menu/main.xml" value="0.21875" />
         <entry key="..\:/Bach CSE/4th Year/10th semester/CSE489 - Mobile Programming/Project/Stock Prediction/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.264" />
+        <entry key="..\:/Bach CSE/4th Year/10th semester/CSE489 - Mobile Programming/Project/Stock-Prediction-Project/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.17685185185185184" />
+        <entry key="..\:/Bach CSE/4th Year/10th semester/CSE489 - Mobile Programming/Project/Stock-Prediction-Project/app/src/main/res/drawable/cell_shape.xml" value="0.17685185185185184" />
+        <entry key="..\:/Bach CSE/4th Year/10th semester/CSE489 - Mobile Programming/Project/Stock-Prediction-Project/app/src/main/res/drawable/ic_dashboard_black_24dp.xml" value="0.17685185185185184" />
+        <entry key="..\:/Bach CSE/4th Year/10th semester/CSE489 - Mobile Programming/Project/Stock-Prediction-Project/app/src/main/res/drawable/ic_home_black_24dp.xml" value="0.17685185185185184" />
+        <entry key="..\:/Bach CSE/4th Year/10th semester/CSE489 - Mobile Programming/Project/Stock-Prediction-Project/app/src/main/res/drawable/ic_launcher_background.xml" value="0.17685185185185184" />
+        <entry key="..\:/Bach CSE/4th Year/10th semester/CSE489 - Mobile Programming/Project/Stock-Prediction-Project/app/src/main/res/drawable/ic_menu_camera.xml" value="0.17685185185185184" />
+        <entry key="..\:/Bach CSE/4th Year/10th semester/CSE489 - Mobile Programming/Project/Stock-Prediction-Project/app/src/main/res/drawable/ic_menu_gallery.xml" value="0.17685185185185184" />
+        <entry key="..\:/Bach CSE/4th Year/10th semester/CSE489 - Mobile Programming/Project/Stock-Prediction-Project/app/src/main/res/drawable/ic_menu_slideshow.xml" value="0.17685185185185184" />
+        <entry key="..\:/Bach CSE/4th Year/10th semester/CSE489 - Mobile Programming/Project/Stock-Prediction-Project/app/src/main/res/drawable/ic_notifications_black_24dp.xml" value="0.17685185185185184" />
+        <entry key="..\:/Bach CSE/4th Year/10th semester/CSE489 - Mobile Programming/Project/Stock-Prediction-Project/app/src/main/res/drawable/shape.xml" value="0.17685185185185184" />
+        <entry key="..\:/Bach CSE/4th Year/10th semester/CSE489 - Mobile Programming/Project/Stock-Prediction-Project/app/src/main/res/drawable/side_nav_bar.xml" value="0.17685185185185184" />
         <entry key="..\:/Bach CSE/4th Year/10th semester/CSE489 - Mobile Programming/Project/Stock-Prediction-Project/app/src/main/res/layout/activity_login.xml" value="0.21105072463768115" />
         <entry key="..\:/Bach CSE/4th Year/10th semester/CSE489 - Mobile Programming/Project/Stock-Prediction-Project/app/src/main/res/layout/activity_main.xml" value="0.21875" />
         <entry key="..\:/Bach CSE/4th Year/10th semester/CSE489 - Mobile Programming/Project/Stock-Prediction-Project/app/src/main/res/layout/activity_news.xml" value="0.21875" />
@@ -28,18 +39,19 @@
         <entry key="..\:/Bach CSE/4th Year/10th semester/CSE489 - Mobile Programming/Project/Stock-Prediction-Project/app/src/main/res/layout/content_main.xml" value="0.21875" />
         <entry key="..\:/Bach CSE/4th Year/10th semester/CSE489 - Mobile Programming/Project/Stock-Prediction-Project/app/src/main/res/layout/fragment_cc.xml" value="0.21875" />
         <entry key="..\:/Bach CSE/4th Year/10th semester/CSE489 - Mobile Programming/Project/Stock-Prediction-Project/app/src/main/res/layout/fragment_dashboard.xml" value="0.21875" />
-        <entry key="..\:/Bach CSE/4th Year/10th semester/CSE489 - Mobile Programming/Project/Stock-Prediction-Project/app/src/main/res/layout/fragment_gallery.xml" value="0.21875" />
+        <entry key="..\:/Bach CSE/4th Year/10th semester/CSE489 - Mobile Programming/Project/Stock-Prediction-Project/app/src/main/res/layout/fragment_gallery.xml" value="0.176" />
         <entry key="..\:/Bach CSE/4th Year/10th semester/CSE489 - Mobile Programming/Project/Stock-Prediction-Project/app/src/main/res/layout/fragment_home.xml" value="0.21875" />
         <entry key="..\:/Bach CSE/4th Year/10th semester/CSE489 - Mobile Programming/Project/Stock-Prediction-Project/app/src/main/res/layout/fragment_login.xml" value="0.1" />
         <entry key="..\:/Bach CSE/4th Year/10th semester/CSE489 - Mobile Programming/Project/Stock-Prediction-Project/app/src/main/res/layout/fragment_news.xml" value="0.176" />
         <entry key="..\:/Bach CSE/4th Year/10th semester/CSE489 - Mobile Programming/Project/Stock-Prediction-Project/app/src/main/res/layout/fragment_notifications.xml" value="0.21875" />
         <entry key="..\:/Bach CSE/4th Year/10th semester/CSE489 - Mobile Programming/Project/Stock-Prediction-Project/app/src/main/res/layout/fragment_predict.xml" value="0.10638297872340426" />
         <entry key="..\:/Bach CSE/4th Year/10th semester/CSE489 - Mobile Programming/Project/Stock-Prediction-Project/app/src/main/res/layout/fragment_signup.xml" value="0.21105072463768115" />
-        <entry key="..\:/Bach CSE/4th Year/10th semester/CSE489 - Mobile Programming/Project/Stock-Prediction-Project/app/src/main/res/layout/fragment_slideshow.xml" value="0.21875" />
-        <entry key="..\:/Bach CSE/4th Year/10th semester/CSE489 - Mobile Programming/Project/Stock-Prediction-Project/app/src/main/res/layout/fragment_slist.xml" value="0.21875" />
+        <entry key="..\:/Bach CSE/4th Year/10th semester/CSE489 - Mobile Programming/Project/Stock-Prediction-Project/app/src/main/res/layout/fragment_slideshow.xml" value="0.2" />
+        <entry key="..\:/Bach CSE/4th Year/10th semester/CSE489 - Mobile Programming/Project/Stock-Prediction-Project/app/src/main/res/layout/fragment_slist.xml" value="0.264" />
         <entry key="..\:/Bach CSE/4th Year/10th semester/CSE489 - Mobile Programming/Project/Stock-Prediction-Project/app/src/main/res/layout/layout_aboutus.xml" value="0.21875" />
         <entry key="..\:/Bach CSE/4th Year/10th semester/CSE489 - Mobile Programming/Project/Stock-Prediction-Project/app/src/main/res/layout/nav_header_main.xml" value="0.21875" />
         <entry key="..\:/Bach CSE/4th Year/10th semester/CSE489 - Mobile Programming/Project/Stock-Prediction-Project/app/src/main/res/layout/news_channel_1.xml" value="0.21875" />
+        <entry key="..\:/Bach CSE/4th Year/10th semester/CSE489 - Mobile Programming/Project/Stock-Prediction-Project/app/src/main/res/layout/stockscsv_listview.xml" value="0.21875" />
         <entry key="..\:/Bach CSE/4th Year/10th semester/CSE489 - Mobile Programming/Project/Stock-Prediction-Project/app/src/main/res/menu/activity_main_drawer.xml" value="0.21875" />
         <entry key="..\:/Bach CSE/4th Year/10th semester/CSE489 - Mobile Programming/Project/Stock-Prediction-Project/app/src/main/res/menu/bottom_nav_menu.xml" value="0.21875" />
         <entry key="..\:/Bach CSE/4th Year/10th semester/CSE489 - Mobile Programming/Project/Stock-Prediction-Project/app/src/main/res/menu/main.xml" value="0.21875" />

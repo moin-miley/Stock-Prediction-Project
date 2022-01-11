@@ -9,8 +9,8 @@
 
     <string name="menu_home">Home</string>
     <string name="menu_profile">Profile</string>
-    <string name="menu_shares">My Shares</string>
-    <string name="menu_slist">Stocks</string>
+    <string name="menu_shares">Stock Quotes</string>
+    <string name="menu_slist">Stocks List</string>
     <string name="menu_pred">Predict Price</string>
     <string name="menu_cc">Currency Convert</string>
     <string name="menu_news">News</string>
@@ -30,6 +30,12 @@
         <item>Nestle Beverages</item>
         <item>Ford Motor Company</item>
         <item>Apple Inc</item>
+    </string-array>
+    <string-array name="stockCode">
+        <item>View Stock Symbols</item>
+        <item>View Stock Names</item>
+        <item>View Stock Symbols and Close Price</item>
+        <item>View Entire List</item>
     </string-array>
     <string name="convertDropDown">dropDownMenu</string>
     <string-array name="currency">

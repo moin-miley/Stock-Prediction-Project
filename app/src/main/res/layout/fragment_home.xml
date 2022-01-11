@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -7,264 +7,136 @@
     android:layout_height="match_parent"
     tools:context=".ui.home.HomeFragment"
     android:orientation="vertical">
-
-    <TextView
-        android:id="@+id/text_home"
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Stocks Market"
-        android:textStyle="bold"
-        android:textSize="30dp"
-        android:textColor="@color/black"
-        android:padding="5dp"
-        android:background="@color/teal_200"/>
-
-    <TableLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <TableRow
-            android:backgroundTint="#CCC">
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Date"
-                android:background="@drawable/cell_shape"
-                android:backgroundTint="#CCC"
-                android:padding="5dp" />
-            <TextView
-                android:layout_height="wrap_content"
-                android:layout_width="match_parent"
-                android:text="Trading Code"
-                android:background="@drawable/cell_shape"
-                android:backgroundTint="#CCC"
-                android:padding="5dp" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Closing Price"
-                android:background="@drawable/cell_shape"
-                android:backgroundTint="#CCC"
-                android:padding="5dp" />
-        </TableRow>
-        <TableRow>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="12/30/2020"
-                android:background="@drawable/cell_shape"
-                android:padding="5dp" />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="1JANATAMF"
-                android:background="@drawable/cell_shape"
-                android:padding="5dp" />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="6"
-                android:background="@drawable/cell_shape"
-                android:padding="5dp" />
-        </TableRow>
-        <TableRow>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="12/30/2020"
-                android:background="@drawable/cell_shape"
-                android:padding="5dp" />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="1STPRIMFMF"
-                android:background="@drawable/cell_shape"
-                android:padding="5dp" />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="19.5"
-                android:background="@drawable/cell_shape"
-                android:padding="5dp" />
-        </TableRow>
-        <TableRow>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="12/30/2020"
-                android:background="@drawable/cell_shape"
-                android:padding="5dp" />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="AAMRANET"
-                android:background="@drawable/cell_shape"
-                android:padding="5dp" />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="45.2"
-                android:background="@drawable/cell_shape"
-                android:padding="5dp" />
-        </TableRow>
-    </TableLayout>
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Currency List"
-        android:textStyle="bold"
-        android:textSize="30dp"
-        android:textColor="@color/black"
-        android:padding="5dp"
-        android:background="@color/teal_200">
-    </TextView>
-
-    <LinearLayout
-        android:layout_height="wrap_content"
-        android:layout_width="wrap_content"
-        android:orientation="horizontal">
+        android:layout_height="match_parent">
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Dollars"
-            android:background="@drawable/shape"
-            android:padding="5dp"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Euros"
-            android:background="@drawable/shape"
-            android:padding="5dp"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Pounds"
-            android:background="@drawable/shape"
-            android:padding="5dp"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="BDT"
-            android:background="@drawable/shape"
-            android:padding="5dp"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Rupee"
-            android:background="@drawable/shape"
-            android:padding="5dp"/>
-    </LinearLayout>
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="News"
-        android:textStyle="bold"
-        android:textSize="30dp"
-        android:textColor="@color/black"
-        android:padding="5dp"
-        android:background="@color/teal_200">
-    </TextView>
-    <LinearLayout
-        android:layout_height="wrap_content"
-        android:layout_width="match_parent"
-        android:orientation="vertical">
-        <LinearLayout
+            android:id="@+id/text_home"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="News Article"
-                android:padding="5dp"
-                android:layout_weight="1"
-                android:background="@color/purple_200"/>
-            <ImageView
-                android:layout_width="25dp"
-                android:layout_height="match_parent"
-                android:layout_alignParentRight="true"
-                android:contextClickable="true"
-                android:background="@color/purple_200"
-                android:src="@drawable/plus_purple"/>
-        </LinearLayout>
-
-        <LinearLayout
+            android:text="Stock Market"
+            android:textStyle="bold"
+            android:textSize="30dp"
+            android:textColor="@color/black"
+            android:padding="5dp"
+            android:background="@color/teal_200"/>
+        <TextView
+            android:id="@+id/text_intro"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="News Article"
-                android:padding="5dp"
-                android:layout_weight="1"
-                android:background="@color/purple_200"/>
-            <ImageView
-                android:layout_width="25dp"
-                android:layout_height="match_parent"
-                android:layout_alignParentRight="true"
-                android:contextClickable="true"
-                android:background="@color/purple_200"
-                android:src="@drawable/plus_purple"/>
-        </LinearLayout>
-        <LinearLayout
+            android:text="Welcome to Stock Exchange Information App! \n
+There are countless features you can enjoy, for example: \n
+* View stock information in detail \n
+* See price predictions for various stocks \n
+* Convert Currency units and many more!"
+            android:layout_below="@+id/text_home"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:padding="5dp"
+            android:background="@color/white"/>
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="News Article"
-                android:padding="5dp"
-                android:layout_weight="1"
-                android:background="@color/purple_200"/>
-            <ImageView
-                android:layout_width="25dp"
-                android:layout_height="match_parent"
-                android:layout_alignParentRight="true"
-                android:contextClickable="true"
-                android:background="@color/purple_200"
-                android:src="@drawable/plus_purple"/>
-        </LinearLayout>
+            android:text="Currency List Available:"
+            android:id="@+id/currlists"
+            android:layout_below="@+id/text_intro"
+            android:textStyle="bold"
+            android:textSize="30dp"
+            android:textColor="@color/black"
+            android:padding="5dp"
+            android:background="@color/teal_200">
+       </TextView>
         <LinearLayout
+            android:id="@+id/horlist1"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/currlists"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dollars (Amercian Currency)"
+                android:padding="5dp"
+                android:textColor="@color/black"
+                android:textSize="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Euros (European Currency)"
+                android:padding="5dp"
+                android:textColor="@color/black"
+                android:textSize="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yen (Japanese Currency)"
+                android:padding="5dp"
+                android:textColor="@color/black"
+                android:textSize="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BDT (Bangladesh Currency)"
+                android:padding="5dp"
+                android:textColor="@color/black"
+                android:textSize="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rupee (Indian Currency)"
+                android:padding="5dp"
+                android:textColor="@color/black"
+                android:textSize="20dp"/>
+        </LinearLayout>
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="News Article"
-                android:padding="5dp"
-                android:layout_weight="1"
-                android:background="@color/purple_200"/>
-            <ImageView
-                android:layout_width="25dp"
-                android:layout_height="match_parent"
-                android:layout_alignParentRight="true"
-                android:contextClickable="true"
-                android:background="@color/purple_200"
-                android:src="@drawable/plus_purple"/>
-        </LinearLayout>
+            android:text="Predictions Available:"
+            android:id="@+id/prelists"
+            android:layout_below="@+id/horlist1"
+            android:textStyle="bold"
+            android:textSize="30dp"
+            android:textColor="@color/black"
+            android:padding="5dp"
+            android:background="@color/teal_200">
+        </TextView>
         <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/prelists"
+            android:id="@+id/horlist2"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nestle Beverages"
+                android:padding="5dp"
+                android:textColor="@color/black"
+                android:textSize="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ford Motor Company"
+                android:padding="5dp"
+                android:textColor="@color/black"
+                android:textSize="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Apple Inc"
+                android:padding="5dp"
+                android:textColor="@color/black"
+                android:textSize="20dp"/>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/contact"
+            android:layout_below="@+id/horlist2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="News Article"
-                android:padding="5dp"
-                android:layout_weight="1"
-                android:background="@color/purple_200"/>
-            <ImageView
-                android:layout_width="25dp"
-                android:layout_height="match_parent"
-                android:layout_alignParentRight="true"
-                android:contextClickable="true"
-                android:background="@color/purple_200"
-                android:src="@drawable/plus_purple"/>
-        </LinearLayout>
-    </LinearLayout>
-
-</LinearLayout>
+            android:text="\n Contact Us at: \n
+stockpredictionapp.cse489@gmail.com"
+            android:textStyle="italic"
+            android:textSize="20dp"
+            android:textColor="@color/purple_200"/>
+    </RelativeLayout>
+</ScrollView>

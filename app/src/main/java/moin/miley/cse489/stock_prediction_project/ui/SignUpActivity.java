@@ -4,16 +4,15 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.text.TextUtils;
-import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
-
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
-
-import com.google.android.material.snackbar.Snackbar;
-
+import org.apache.http.NameValuePair;
+import org.apache.http.message.BasicNameValuePair;
+import java.util.ArrayList;
+import java.util.List;
 import moin.miley.cse489.stock_prediction_project.MainActivity;
 import moin.miley.cse489.stock_prediction_project.R;
 import moin.miley.cse489.stock_prediction_project.databinding.ActivityMainBinding;
@@ -31,9 +30,8 @@ public class SignUpActivity extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-
         setContentView(R.layout.fragment_signup);
+
         sharedPreferences = getSharedPreferences("LoginSharedPrefs", MODE_PRIVATE);
         prefEditor = sharedPreferences.edit();
 
@@ -77,6 +75,16 @@ public class SignUpActivity extends AppCompatActivity {
             if(!isUserExist && TextUtils.isEmpty(pass2) || pass2.length() < 4 || pass2.length() > 10){
                 strb.append("Invalid Password Re-entered");
             }
+            List<NameValuePair> params = new ArrayList<>();
+            params.add(new BasicNameValuePair("Username",userName));
+            params.add(new BasicNameValuePair("Email",email));
+            params.add(new BasicNameValuePair("FirstName",firstName));
+            params.add(new BasicNameValuePair("LastName",lastName));
+            params.add(new BasicNameValuePair("Phone",phone));
+            params.add(new BasicNameValuePair("Password1",pass1));
+            params.add(new BasicNameValuePair("Password2",pass2));
+
+            JSONParser.getInstance().makeHttpRequest("http://10.0.2.2:80/StockApp/Dbconfig.php", params);
 
             prefEditor = sharedPreferences.edit();
             prefEditor.putString("USERNAME", userName);

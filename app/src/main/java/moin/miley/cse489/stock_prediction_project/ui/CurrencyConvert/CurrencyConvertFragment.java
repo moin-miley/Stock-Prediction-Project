@@ -2,18 +2,15 @@ package moin.miley.cse489.stock_prediction_project.ui.CurrencyConvert;
 
 import static java.lang.Double.parseDouble;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -58,6 +55,9 @@ public class CurrencyConvertFragment extends Fragment {
                 Double amt = parseDouble(enterAmount.getText().toString());
                 message = getActivity().findViewById(R.id.output);
                 message.setText("Null");
+                if(enterAmount==null){
+                    message.setText("Enter an amount first!");
+                }
                 int spinner_pos1 = spinner1.getSelectedItemPosition();
                 int spinner_pos2 = spinner2.getSelectedItemPosition();
                 if(spinner_pos1==0 && spinner_pos2==0)

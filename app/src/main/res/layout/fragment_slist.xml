@@ -3,12 +3,45 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".MainActivity">
-
-    <WebView
-        android:id="@+id/webview"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:layout_margin="5dp">
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        />
-
+        android:background="@color/teal_700">
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Enter the parameters:"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:textColor="@color/black"/>
+        <Spinner
+            android:id="@+id/spinner1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView1"
+            android:layout_marginBottom="25dp"
+            android:background="@color/white"
+            android:spinnerMode="dropdown" />
+        <Button
+            android:id="@+id/predictButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spinner1"
+            android:layout_centerHorizontal="true"
+            android:backgroundTint="@color/teal_700"
+            android:text="Enter"
+            android:textColor="@color/white"
+            android:textSize="10dp"/>
+        <TextView
+            android:id="@+id/PredictionOutput"
+            android:layout_below="@+id/predictButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="20dp"/>
+    </RelativeLayout>
 </ScrollView>
