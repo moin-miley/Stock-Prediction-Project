@@ -1,6 +1,7 @@
 package moin.miley.cse489.stock_prediction_project.ui.StockList;
 //Stock List = Profile page
 
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -29,6 +30,7 @@ public class StockListFragment extends Fragment {
     Button enter;
     String output;
     TextView tv;
+    readCSV readfile = new readCSV();
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         return inflater.inflate(R.layout.fragment_slist, container, false);
@@ -49,7 +51,8 @@ public class StockListFragment extends Fragment {
         StringBuilder print = ReadStocksSample_Spinner0();
         StringBuilder print2 = ReadStocksSample_Spinner1();
         StringBuilder print3 = ReadStocksSample_Spinner2();
-        StringBuilder print4 = ReadStocksSample_Spinner3();
+        //StringBuilder print4 = ReadStocksSample_Spinner3();
+
 
         enter.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -66,7 +69,7 @@ public class StockListFragment extends Fragment {
                     tv.setText(print3);
                 }
                 if(spinner_pos==3){
-                    tv.setText(print4);
+                    new readCSV().execute();
                 }
             }
         });
@@ -192,5 +195,61 @@ public class StockListFragment extends Fragment {
             e.printStackTrace();
         }
         return sb;
+    }
+    private class readCSV extends AsyncTask<Void, Void, StringBuilder> {
+        @Override
+        protected void onPreExecute() {
+            super.onPreExecute();
+        }
+
+        @Override
+        protected StringBuilder doInBackground(Void... voids) {
+            InputStream is = getResources().openRawResource(R.raw.stocklist);
+            StringBuilder sb = new StringBuilder(400);
+            BufferedReader reader = new BufferedReader(
+                    new InputStreamReader(is, Charset.forName("UTF-8"))
+            );
+            String line = "";
+            try{
+                while((line= reader.readLine())!=null){
+                    String[] tokens = line.split(",");
+                    StockSamples sample = new StockSamples();
+                    sample.setSymbol(tokens[0]);
+                    sample.setName(tokens[1]);
+                    sample.setLast_Sale(tokens[2]);
+                    sample.setNet_Change(tokens[3]);
+                    sample.setChance_percent(tokens[4]);
+                    sample.setMarket_cap(tokens[5]);
+                    sample.setIpo_year(tokens[6]);
+                    sample.setVolume(tokens[7]);
+                    sample.setSector(tokens[8]);
+                    sample.setSector(tokens[9]);
+                    priceList4.add(sample);
+                    sb.append(sample.getName());
+                    sb.append("\n");
+                    sb.append("Symbol: " + sample.getSymbol() + "\n");
+                    sb.append("Close Price: " + sample.getLast_Sale() + "\n");
+                    sb.append("Net Change: " + sample.getNet_Change() + "\n");
+                    sb.append("Change in %: " + sample.getChance_percent() + "\n");
+                    sb.append("Market Capital: " + sample.getMarket_cap() + "\n");
+                    sb.append("IPO Year: " + sample.getIpo_year() + "\n");
+                    sb.append("Volume: " + sample.getVolume() + "\n");
+                    sb.append("Sector: " + sample.getSector() + "\n");
+                    sb.append("Industry: " + sample.getIndustry() + "\n");
+                    sb.append("\n\n");
+                }
+            }
+            catch (IOException e){
+                Log.wtf("SlideshowFragment","Error reading data on line" + line,e);
+                e.printStackTrace();
+            }
+            return sb;
+        }
+
+        @Override
+        protected void onPostExecute(StringBuilder stringBuilder) {
+            super.onPostExecute(stringBuilder);
+            tv.setText(stringBuilder);
+        }
     }
 }

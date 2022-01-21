@@ -4,22 +4,26 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.text.TextUtils;
-import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
+
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+
 import org.apache.http.NameValuePair;
 import org.apache.http.message.BasicNameValuePair;
+
 import java.util.ArrayList;
 import java.util.List;
+
 import moin.miley.cse489.stock_prediction_project.MainActivity;
 import moin.miley.cse489.stock_prediction_project.R;
 import moin.miley.cse489.stock_prediction_project.databinding.ActivityMainBinding;
 
 public class SignUpActivity extends AppCompatActivity {
     private EditText username, emailID, FirstName, LastName, PhoneNo, Password1, Password2;
-    private Button register;
+    TextView warning;
     private boolean isUserExist;
     private SharedPreferences sharedPreferences;
     private SharedPreferences.Editor prefEditor;
@@ -42,6 +46,7 @@ public class SignUpActivity extends AppCompatActivity {
         PhoneNo = findViewById(R.id.PhoneNo);
         Password1 = findViewById(R.id.pass1);
         Password2 = findViewById(R.id.pass2);
+        warning = findViewById(R.id.warning);
 
         findViewById(R.id.registerBtn).setOnClickListener(r->{
             String userName = username.getText().toString();
@@ -51,7 +56,6 @@ public class SignUpActivity extends AppCompatActivity {
             String phone = PhoneNo.getText().toString();
             String pass1 = Password1.getText().toString();
             String pass2 = Password2.getText().toString();
-
 
             StringBuilder strb = new StringBuilder();
             if(TextUtils.isEmpty(userName) || userName.length() < 4 || userName.length() > 30){
@@ -75,6 +79,11 @@ public class SignUpActivity extends AppCompatActivity {
             if(!isUserExist && TextUtils.isEmpty(pass2) || pass2.length() < 4 || pass2.length() > 10){
                 strb.append("Invalid Password Re-entered");
             }
+            if (strb.toString().length() != 0) {
+                warning.setText(strb.toString());
+                return;
+            }
+
             List<NameValuePair> params = new ArrayList<>();
             params.add(new BasicNameValuePair("Username",userName));
             params.add(new BasicNameValuePair("Email",email));
